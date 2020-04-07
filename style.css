@@ -1,0 +1,48 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+a {
+  padding: 7px 10px 0px 10px;
+  font-size: xx-small;
+  text-decoration: none;
+  color: #272727;
+}
+a:visited {
+  color: #272727;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  ackground: cyan;
+}
+
+#logo {
+  padding-top: 150px;
+}
+
+#search {
+  padding-top: 20px;
+}
+
+form {
+  text-align: center;
+  display: block;
+  border: 1px solid gray;
+  border-radius: 24px;
+  width: 600px;
+}
+
+input {
+  padding: 0;
+  height: 40px;
+  width: 530px;
+  border: transparent;
+}
