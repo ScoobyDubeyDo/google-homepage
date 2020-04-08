@@ -35,14 +35,15 @@ article {
 form {
   text-align: center;
   display: block;
-  border: 1px solid gray;
+  border: 0.6px solid #80808093;
   border-radius: 24px;
-  width: 600px;
+  width: 585px;
+  height: 42px;
 }
 
 input {
   padding: 0;
-  height: 40px;
+  height: 38px;
   width: 530px;
   border: transparent;
 }
