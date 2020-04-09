@@ -13,7 +13,9 @@
   <body>
     <header>
       <nav>
-        <a href="https://www.google.com/intl/en-GB/gmail/about/#">Gmail</a>
+        <a href="https://www.google.com/intl/en-GB/gmail/about/#" id="g"
+          >Gmail</a
+        >
         <a href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl">Images</a>
         <a href="https://about.google/intl/en/products/?tab=wh"
           ><img src="./header/button-icon.png" alt=""
@@ -29,10 +31,39 @@
         <img src="./logo.png" alt="" />
       </div>
       <div id="search">
-        <form action="#">
+        <form action="#" id="google">
+          <img src="./search.png" alt="search" id="search-button" />
           <input type="text" />
+          <a href="#"
+            ><img src="./googlemic_color_24dp.png" alt="mic" id="mic"
+          /></a>
         </form>
+
+        <button type="submit" form="google" id="first">Google Search</button>
+        <button type="submit" form="google" id="second">
+          I'm Feeling Lucky
+        </button>
       </div>
     </article>
+    <footer>
+      <div id="india">India</div>
+      <div id="bottom">
+        <div>
+          <nav id="one">
+            <a href="#">Advertising</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+            <a href="#">How Search works</a>
+          </nav>
+        </div>
+        <div>
+          <nav id="two">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Settings</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

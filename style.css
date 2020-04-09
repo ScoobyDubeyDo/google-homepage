@@ -1,9 +1,15 @@
-body {
-  font-family: "Josefin Sans", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-a {
-  padding: 7px 10px 0px 10px;
-  font-size: xx-small;
+
+body {
+  font-family: /* "Josefin Sans", */ sans-serif;
+}
+header nav a {
+  padding: 15px 10px 0px 10px;
+  font-size: 13px;
   text-decoration: none;
   color: #272727;
 }
@@ -11,17 +17,21 @@ a:visited {
   color: #272727;
 }
 
-nav {
+#g {
+  padding-right: 3px;
+}
+
+header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 15px;
 }
 
 article {
   display: flex;
   align-items: center;
   flex-direction: column;
-  ackground: cyan;
 }
 
 #logo {
@@ -29,21 +39,116 @@ article {
 }
 
 #search {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 form {
   text-align: center;
   display: block;
-  border: 0.6px solid #80808093;
+  border: 0.6px solid #80808044;
   border-radius: 24px;
   width: 585px;
-  height: 42px;
+  height: 47px;
+  position: relative;
+}
+
+form:hover {
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(201, 201, 201, 1);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(201, 201, 201, 1);
+  box-shadow: 0px 1px 3px 0px rgba(201, 201, 201, 1);
 }
 
 input {
-  padding: 0;
-  height: 38px;
-  width: 530px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  width: 490px;
   border: transparent;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-button {
+  float: left;
+  padding: 14px 0 0 17px;
+}
+
+#mic {
+  float: right;
+  padding: 10px 17px 0 0;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  color: #5f6368;
+  padding: 9.5px 16px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#first {
+  margin: 28px 0 0 145px;
+}
+
+#second {
+  margin: 28px 0 0 8px;
+}
+
+button:hover {
+  color: black;
+  border: 0.6px solid #46454550;
+  padding: 8.9px 15.4px;
+  background-color: #f2f2f2d0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 100vw;
+}
+
+footer > div {
+  border: 0.3px solid #aca9a950;
+  border-bottom: none;
+}
+
+#india {
+  padding: 11px 29px;
+  font-size: 15px;
+  color: #878787;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 11px 29px;
+}
+
+#bottom nav a {
+  font-size: 14px;
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+#bottom #one a {
+  padding-right: 23px;
+}
+
+#bottom #two a {
+  padding-left: 23px;
 }
